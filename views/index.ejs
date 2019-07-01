@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="/stylesheets/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src='/javascripts/jQuery.js'></script>
+	<script src="flash.min.js"></script>
+	<script src="/javascripts/jquery.novacancy.js"></script>
 	<script src='/javascripts/main.js'></script>
 	<link href="/stylesheets/hamburgers.css" rel="stylesheet">
 	<title>Max Reeves</title>
@@ -14,27 +16,23 @@
 <body>
 	<a id="top">
 	<nav>
-		<button class="hamburger" type="button">
+		<button id="hamburger-icon" class="hamburger" type="button">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
 			</span>
 		</button>
-		<ul class="hidden-menu-items menu-items22">
-			<li class=""><a href="#about">About</a></li>
-			<li class=""><a href="#projects" id="project-click">Projects</a></li>
-			<li class=""><a href="#contact">Contact</a></li>
+		<ul id="hamburger-items" class="hidden-menu-items menu-items22">
+			<li class="vacancy"><a href="#about">About</a></li>
+			<li class="vacancy"><a href="#projects" id="project-click">Projects</a></li>
+			<li class="vacancy"><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 
 	<div class="container index-div">
-		<h1 class="projects down22">Max Reeves</h1>
-		<h2 class="projects fade2">Junior Web Developer</h2>
-
-		<div class="row">
-			<div class="col-lg fade3 index-text">
-			</div>
+		<div class="transparent-div">
+			<h1 class="projects down22 white-h2 no">Max Reeves</h1>
+			<h2 class="projects fade2 white-h2 vacancy">Junior Web Developer</h2>
 		</div>
-
 	</div>
 
 	<div class="container about-div">
@@ -134,18 +132,18 @@
 	<div class="container contact-div">
 	 <a id="contact">
 		 <h1 class="projects font-weight: bold;">Get In Touch...</h1>
-   	 <form action="/sent" method="get">
+   	 <form name="email-form" action="/sent" method="get" onsubmit="return validateForm()">
 
      <label for="fname" class="form-label22">Your Name</label>
-     <input type="fname" id="fname" name="fname" placeholder="Your Name..">
+     <input type="text" id="fname" name="fname" placeholder="Your Name..">
 
      <label for="lname" class="form-label22">Email Adress</label>
-     <input type="lname" id="lname" name="lname" placeholder="Your Email..">
+     <input type="text" id="lname" name="lname" placeholder="Your Email.." >
 
      <label for="subject" class="form-label22">Your Message</label>
-     <textarea id="subject" type="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     <textarea id="subject" type="text" name="subject" placeholder="Write something.." style="height:200px" ></textarea>
 
-     <input type="submit" value="Submit">
+     <input class="vacancy" type="submit" value="Submit">
 
    </form>
 

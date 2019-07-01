@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 /* Navbar Effects */
 
 @-webkit-keyframes hvr-buzz {
@@ -51,9 +53,21 @@ ul {
   font-size: 20px;
 }
 
-a:hover a:link {
-  text-decoration: none;
-  color: black;
+
+#hamburger-items > li > a {
+  color: #fff;
+}
+
+#hamburger-items > li > a:hover {
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+#hamburger-icon > .hamburger-box > .hamburger-inner,
+#hamburger-icon > .hamburger-box > .hamburger-inner:before,
+#hamburger-icon > .hamburger-box > .hamburger-inner:after {
+  background-color: #fff;
 }
 
 /* Grid */
@@ -132,6 +146,7 @@ a:hover a:link {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+
 }
 
 .container-22:hover .image-22 {
@@ -143,7 +158,7 @@ a:hover a:link {
 }
 
 .text-22 {
-  background-color: #073B4C;
+  background-color: #645FA7;
   color: white;
   font-size: 16px;
   padding: 25px 40px;
@@ -169,6 +184,21 @@ a:hover a:link {
 }
 
 /* Pages */
+
+.white-h2 {
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+body {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+                    url("/images/marble2.jpg");
+
+}
 
 .down22 {
   margin-top: 126px;
@@ -201,17 +231,19 @@ a:hover a:link {
 input, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  border: 2px solid white;
+  border-bottom-color: #645EF9;
+
 }
+
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #645EF9;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -222,7 +254,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #645EEC;
 }
 
 .form-label22 {
@@ -241,4 +273,24 @@ input[type=submit]:hover {
 footer {
   margin: 0 auto;
   padding: 0px;
+}
+
+
+/* NO Vacancy  */
+
+.board {
+  text-align: center;
+  border: 1px solid rgba(255,180,0,0.4);
+  border-radius: 4px;
+  width: 500px;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  background-color: #000;
+}
+
+.board > * {
+  font-size: 75px;
+  font-family: 'Monoton', cursive;
+  color: #fff;
+  text-transform: uppercase;
 }
