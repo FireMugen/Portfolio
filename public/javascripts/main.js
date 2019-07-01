@@ -61,24 +61,27 @@ $(document).ready(function () {
   	'autoOn': true
 	});
 
-	$( "#submit-validation" ).click(function() {
-  	const $validate = $( "#name-validation" ).value;
-  	if ( $validate === "" ) {
-  		flash('Please enter your name..', {
-  			'bgColor' : 'purple',
-  			'duration' : 2000,
-  			'vPosition' : 'top',
-  		});
-  		return false;
-  	}
-  });
 });
 
-// //Javascript
-// function validateForm() {
-// 	let fname = document.forms["email-form"]["fname"].value;
-// 	if (fname === "") {
-// 		alert("Name must be filled out");
-// 		return false;
-// 	}
-// }
+
+//Javascript Validation
+function validateForm() {
+	let fname = document.forms["email-form"]["fname"].value;
+	let email = document.forms["email-form"]["lname"].value;
+	let message = document.forms["email-form"]["subject"].value;
+
+	if (fname === "") {
+		document.getElementsByName('fname')[0].placeholder='Name Required';
+		document.getElementsByName('fname')[0].dataset.valid="not-valid";
+		return false;
+	} if (email === "") {
+		document.getElementsByName('lname')[0].placeholder='Email Required';
+		document.getElementsByName('lname')[0].dataset.valid="not-valid";
+		return false
+	} if (message === "") {
+		document.getElementsByName('message')[0].placeholder='You must enter a message';
+		document.getElementsByName('message')[0].dataset.valid="not-valid";
+		return false
+	}
+
+}

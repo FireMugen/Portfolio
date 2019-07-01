@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="/stylesheets/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<script src='/javascripts/jQuery.js'></script>
-	<script src="flash.min.js"></script>
 	<script src="/javascripts/jquery.novacancy.js"></script>
 	<script src='/javascripts/main.js'></script>
 	<link href="/stylesheets/hamburgers.css" rel="stylesheet">
@@ -132,19 +131,18 @@
 	<div class="container contact-div">
 	 <a id="contact">
 		 <h1 class="projects font-weight: bold;">Get In Touch...</h1>
-   	 <form name="email-form" action="/sent" method="get" onsubmit="return validateForm()">
+   	 <form id="contact-form" name="email-form" action="/sent" method="get" onsubmit="return validateForm()">
 
      <label for="fname" class="form-label22">Your Name</label>
-     <input type="text" id="fname" name="fname" placeholder="Your Name..">
+     <input type="text" id="fname" name="fname" data-valid="" placeholder="Your Name..">
 
      <label for="lname" class="form-label22">Email Adress</label>
-     <input type="text" id="lname" name="lname" placeholder="Your Email.." >
+     <input type="text" id="lname" name="lname" data-valid="" placeholder="Your Email.." >
 
      <label for="subject" class="form-label22">Your Message</label>
-     <textarea id="subject" type="text" name="subject" placeholder="Write something.." style="height:200px" ></textarea>
+     <textarea id="subject" type="text" name="subject" data-valid="" placeholder="Write something.." style="height:200px" ></textarea>
 
-     <input class="vacancy" type="submit" value="Submit">
-
+     <input id="submit-button" type="submit" value="Submit">
    </form>
 
 	<footer class="">
