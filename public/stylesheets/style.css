@@ -1,0 +1,244 @@
+/* Navbar Effects */
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Navbar */
+
+.hidden-menu-items {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+a:hover a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* Grid */
+
+.col-lg {
+	padding: 25px;
+	text-align: center;
+}
+
+.projects {
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Fades */
+
+.fade1 {
+	animation:0s ease 0s normal forwards 1 fadein;
+	-webkit-animation:0.25s ease 0s normal forwards 1 fadein;
+	opacity:1
+}
+
+.fade2 {
+	animation:0s ease 0s normal forwards 1 fadein;
+	-webkit-animation:0.75s ease 0s normal forwards 1 fadein;
+	opacity:1
+}
+
+.fade3 {
+	animation:0s ease 0s normal forwards 1 fadein;
+	-webkit-animation:1.25s ease 0s normal forwards 1 fadein;
+	opacity:1
+}
+
+.fade4 {
+	animation:0s ease 0s normal forwards 1 fadein;
+	-webkit-animation:1.75s ease 0s normal forwards 1 fadein;
+	opacity:1
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+@-webkit-keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+/* Image Effects */
+
+.image-small {
+	width: 50px;
+	height: 50px;
+}
+
+.image-22 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-22 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-22:hover .image-22 {
+  opacity: 0.3;
+}
+
+.container-22:hover .middle-22 {
+  opacity: 1;
+}
+
+.text-22 {
+  background-color: #073B4C;
+  color: white;
+  font-size: 16px;
+  padding: 25px 40px;
+	border-radius: 1%;
+	width: 480px;
+}
+
+.container-22{
+	position: relative;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.shadow-22 {
+	-moz-box-shadow: 0 0 10px #000000;
+	-webkit-box-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 10px #000000;
+}
+
+.thumbzz {
+	max-height: 300px;
+	width: 450px;
+}
+
+/* Pages */
+
+.down22 {
+  margin-top: 126px;
+}
+
+
+.index-text {
+  padding: 60px;
+}
+
+.index-div {
+	height: 800px;
+}
+
+.about-div {
+	height: 800px;
+}
+
+.project-div {
+	height: 700px;
+}
+
+.contact-div {
+  height: 650px;
+}
+
+/* Contact Form */
+
+/* Style inputs with type="text", select elements and textareas */
+input, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-label22 {
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* Footer */
+.icon22 {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 0px;
+}
