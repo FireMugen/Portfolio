@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
+    "autoprefixer": "^9.6.0",
     "body-parser": "^1.19.0",
+    "chokidar-cli": "^1.2.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
@@ -16,6 +18,25 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node-input-validator": "^3.3.0",
-    "node-sass": "^4.12.0"
-  }
+    "node-sass": "^4.12.0",
+    "node-sass-middleware": "^0.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.35.2"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireMugen/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FireMugen/Portfolio/issues"
+  },
+  "homepage": "https://github.com/FireMugen/Portfolio#readme",
+  "description": ""
 }
