@@ -65,6 +65,11 @@ $(document).ready(function () {
 
 
 //Javascript Validation
+
+function timeout_init() {
+    setTimeout( 'validateForm()', 2000 );
+}
+
 function validateForm() {
 	let fname = document.forms["email-form"]["fname"].value;
 	let email = document.forms["email-form"]["lname"].value;
@@ -73,7 +78,7 @@ function validateForm() {
 	if (fname === "") {
 		document.getElementsByName('fname')[0].placeholder='Name Required';
 		document.getElementsByName('fname')[0].dataset.valid="not-valid";
-		return false;
+		return false
 	} if (email === "") {
 		document.getElementsByName('lname')[0].placeholder='Email Required';
 		document.getElementsByName('lname')[0].dataset.valid="not-valid";
@@ -83,5 +88,6 @@ function validateForm() {
 		document.getElementsByName('message')[0].dataset.valid="not-valid";
 		return false
 	}
+
 
 }

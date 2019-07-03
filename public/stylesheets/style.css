@@ -193,7 +193,7 @@ ul {
 body {
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5) 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
                     url("/images/marble2.jpg");
 }
 
@@ -305,74 +305,6 @@ footer {
   text-transform: uppercase;
 }
 
-/* Button on Landing View */
-/* .landing-button22 {
-  position: relative;
-  display: inline-block;
-  padding: 1.2em 2em;
-  text-decoration: none !important;
-  text-align: center;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: white;
-  margin: 0 auto;
-  text-align: center;
-}
-.landing-button22::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-  border-radius: 4px;
-  text-decoration: none !important;
-  transition: box-shadow .5s ease, -webkit-transform .2s ease;
-  transition: box-shadow .5s ease, transform .2s ease;
-  transition: box-shadow .5s ease, transform .2s ease, -webkit-transform .2s ease;
-  will-change: transform;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
-          transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
-          -webkit-transform-style: preserve-3d;
-                  transform-style: preserve-3d;
-          -webkit-transform: perspective(800px);
-                  transform: perspective(800px);
-}
-.landing-button22:hover::before {
-  text-decoration: none !important;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-.landing-button22::after {
-  position: relative;
-  display: inline-block;
-  content: attr(data-title);
-  text-decoration: none !important;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
-  font-weight: bold;
-  letter-spacing: .01em;
-  will-change: transform;
-  -webkit-transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
-          transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
-
-}
-
-.landing-button22 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 11%;
-  margin-top: 20%;
-  margin-left: 43%;
-  text-decoration: none !important;
-} */
-
 /* Marble */
 /* #marble-sphere {
   text-decoration: none !important;
@@ -421,12 +353,62 @@ footer {
   font-family: 'Noto Sans', sans-serif;
 } */
 
-#svg-down {
+/* Down Arrow on home page */
+
+#svg-down1 {
   margin: 0 auto;
   margin-left: 45%;
   margin-top: 17%;
+  width: 8%;
 }
 
-#svg-down:hover {
-  fill: #D3D4E0;
+.svg-down:hover {
+  opacity: 0.7;
+  animation-name: fadeOutOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.7;
+	}
+}
+
+/* White box about page */
+
+.white-box {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.border-style {
+  height: 50%;
+}
+
+.box-1 {
+  border: 15px solid;
+  border-radius: 5%;
+  background-color: #8C43FF;
+  color: white;
+}
+
+.box-2 {
+  border: 15px solid #fff;
+  background-color: #8C43FF;
+  color: white;
+  border-radius: 5%;
+}
+
+.box-3 {
+  border: 15px solid ;
+  background-color: #8C43FF;
+  border-radius: 5%;
+  color: white;
+
 }
