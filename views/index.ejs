@@ -14,7 +14,7 @@
 </head>
 <body>
 	<a id="top">
-	<nav>
+	<nav class="top-snap">
 		<button id="hamburger-icon" class="hamburger" type="button">
 			<span class="hamburger-box">
 				<span class="hamburger-inner"></span>
@@ -40,38 +40,51 @@
 	<div class="container about-div">
 	<a id="about">
 		<div class="projects">
-			<h1>Now I'm a developer!</h1>
+			<h1 class="purple">Now I'm a developer!</h1>
 		</div>
-	  <div class="white-box">
-		  <div class="row">
-				<div class="col-lg fade2">
-					After spending the first part of my career as a chef, I decided
+		<div class="row row22 border-style" >
+			<div class="col-sm box-1 shadow-22" id="box-1">
+				<br/>
+				<h5 class="">After spending the first part of my career as a chef</h5>
+				<br/>
+				<p>
+					I decided
 					to take the plunge and commit to following my passion for
 					technology by training to become a software developer.
-					Having now finished General Assembly’s Software Engineering
-					Immersive course, I'm looking for the opportunity to further
-					hone my new craft as well as demonstrate the transferable
-					skills I gained in my previous career; things like teamwork, the
-					ability to perform in high pressure, time-critical situations, and
-					determination to see tasks through to completion.
-				</div>
+				</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div><img id="mixer22" class="mixy" src="images/mixer.svg" alt=""></div>
+				<div><img id="saucepan22" class="saucy" src="images/saucepan.svg" alt=""></div>
 			</div>
-		</div>
 
-		<div class="row border-style">
-			<div class="col-sm box-1">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo sunt, rem in beatae voluptate quo, corporis iste voluptas cupiditate, consectetur illum ex fugiat ratione ut neque architecto nesciunt! Similique, doloribus.
+			<div class="col-sm box-2 shadow-22" id="box-2">
+				<br/>
+				<h5>Having now finished General Assembly’s Software Engineering
+				Immersive course</h5>
+				<p>I'm looking for the opportunity to further
+				hone my new craft as well as demonstrate the transferable
+				skills I gained in my previous career; things like teamwork, the
+				ability to perform in high pressure, time-critical situations, and
+				determination to see tasks through to completion.
+			  </p>
+				<br>
+				<br>
+				<br>
+				<% include _laptop %>
 			</div>
-			<div class="col-sm box-2">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod nulla corrupti inventore tenetur qui, dolores, veniam eveniet, labore molestiae, hic impedit repellendus illum esse. Molestiae aut incidunt ut. Suscipit, quibusdam!
-			</div>
-			<div class="col-sm box-3">
+			<div class="col-sm box-3 shadow-22">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis possimus soluta, porro dignissimos quibusdam inventore, ut, eligendi dolorum alias veniam ea corrupti asperiores aut voluptatum magni. Doloremque cumque, esse omnis.
 			</div>
 		</div>
-
 	</div>
-
 
 
 	<div class="container project-div">
@@ -79,7 +92,7 @@
 
 		<div class="row">
 			<div class="projects">
-				<h1>Projects</h1>
+				<h1 class="purple">Things I've Made...</h1>
 			</div>
 		</div>
 
@@ -99,7 +112,7 @@
 				</a>
 			</div>
 			<div class="col-lg" id="2">
-				<a href="https://firemugen.github.io/SimpleStudio/#/" class="container-22 navbar-brand thumbzz"><img src="images/simple-studio2.png" alt="Simple Studio" class="img-fluid image-22"></img>
+				<a href="https://firemugen.github.io/SimpleStudio/#/" class="container-22 navbar-brand thumbzz"><img src="images/simple-studio2.png" alt="Simple Studio" class="img-fluid image-22 "></img>
 					<div class="middle-22">
 						<div class="text-22 shadow-22">Simple Studio a collabrative music app (group project).
 							<br/>
@@ -131,7 +144,7 @@
 				</a>
 			</div>
 			<div class="col-lg" id="4">
-				<a href="https://firemugen.github.io/project0/" class="container-22 navbar-brand thumbzz"><img src="images/tic-tac-toe2.png" alt="Tic Tac Toe" class="img-fluid image-22"></img>
+				<a href="https://firemugen.github.io/project0/" class="container-22 navbar-brand thumbzz "><img src="images/tic-tac-toe2.png" alt="Tic Tac Toe" class="img-fluid image-22"></img>
 					<div class="middle-22 shadow-22">
 						<div class="text-22">My first project. Classic Tic Tac Toe.
 							<br/>
@@ -148,7 +161,7 @@
 
 	<div class="container contact-div">
 	 <a id="contact">
-		 <h1 class="projects font-weight: bold;">Get In Touch...</h1>
+		 <h1 class="projects font-weight: bold; purple">Get In Touch...</h1>
    	 <form id="contact-form" name="email-form" action="/sent" method="get" onsubmit="return validateForm()">
 
      <label for="fname" class="form-label22">Your Name</label>
@@ -160,7 +173,7 @@
      <label for="subject" class="form-label22">Your Message</label>
      <textarea id="subject" type="text" name="subject" data-valid="" placeholder="Write something.." style="height:200px" ></textarea>
 
-     <input id="submit-button" type="submit" value="Submit">
+     <input id="submit-button" class="purple shadow-22" type="submit" value="Submit">
    </form>
 
 	<footer class="">
@@ -179,7 +192,7 @@
 	        </div>
 	      </div>
 	 			<div class="footer-copyright text-center py-5 footer22">© 2019 Copyright
-	 				<a href="#top"> Max Reeves</a>
+	 				<a href="#top" id="purple">Max Reeves</a>
 	 			</div>
 	    </div>
 	  </div>

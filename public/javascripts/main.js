@@ -61,14 +61,39 @@ $(document).ready(function () {
   	'autoOn': true
 	});
 
+	//Hover Effect on about divs //Cooking SVGs
+	$( "#box-1" ).mouseenter(function() {
+		$( "#mixer22" ).addClass( "mixer22" );
+		$( "#saucepan22" ).addClass( "saucepan22" );
+		$('.mixer22').css('animation-play-state','running');
+		$('.saucepan22').css('animation-play-state','running');
+	});
+
+	$( "#box-1" ).mouseleave(function() {
+		$('.mixer22').css('animation-play-state','paused');
+		$('.saucepan22').css('animation-play-state','paused');
+	});
+
+	//Hover Effect on about divs //Laptop SVG
+	$( "#box-2" ).mouseenter(function() {
+		$( "#st1" ).addClass( "st1" );
+		$( "#st2" ).addClass( "st1" );
+		$( "#st3" ).addClass( "st1" );
+		$( "#st4" ).addClass( "st1" );
+		$( "#st5" ).addClass( "st1" );
+		$( "#st6" ).addClass( "st1" );
+		$('.st1').css('animation-play-state','running');
+	});
+
+	$( "#box-2" ).mouseleave(function() {
+		$('.st1').css('animation-play-state','paused');
+	});
+
 });
 
 
 //Javascript Validation
 
-function timeout_init() {
-    setTimeout( 'validateForm()', 2000 );
-}
 
 function validateForm() {
 	let fname = document.forms["email-form"]["fname"].value;
@@ -88,6 +113,4 @@ function validateForm() {
 		document.getElementsByName('message')[0].dataset.valid="not-valid";
 		return false
 	}
-
-
 }
