@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 
 /* Navbar Effects */
 
@@ -130,7 +131,6 @@ ul {
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -183,7 +183,7 @@ ul {
 }
 
 .thumbzz {
-	max-height: 300px;
+	max-height: 40vw;
 	width: 450px;
   border-radius: 5%;
 }
@@ -191,10 +191,9 @@ ul {
 /* Pages */
 
 .white-h2 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
   letter-spacing: 2px;
   font-size: 50px;
-  font-weight: bold;
 }
 
 body {
@@ -214,22 +213,23 @@ body {
 }
 
 .index-div {
-  height: 100vh;
+  height: 800px;
   width: 100vw;
 }
 
 .about-div {
-  height: 100vh;
+  height: 800px;
   width: 100vw;
 }
 
 .project-div {
-  height: 100vh;
+  height: 800px;
   width: 100vw;
+
 }
 
 .contact-div {
-  height: 100vh;
+  height: 800px;
   width: 100vw;
 }
 
@@ -263,9 +263,9 @@ input[type=submit] {
 
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, add a darker color */
 input[type=submit]:hover {
-  background-color: #8C44C1;
+  background-color: #8C43F6;
 }
 
 .form-label22 {
@@ -287,6 +287,12 @@ input[data-valid='not-valid']::placeholder {
 
 input.special22::placeholder {
   color: red;
+}
+
+.shadow-222 {
+	-moz-box-shadow: 0 4px 5px -1px lightgray;
+	-webkit-box-shadow: 0 4px 2px -1px lightgray;
+	box-shadow: 0 4px 2px -1px lightgray;
 }
 
 /* Footer */
@@ -417,7 +423,7 @@ html {
   border-radius: 5%;
   color: white;
   background-color: #8C43FF;
-
+  height: 45vw;
 }
 
 .box-2 {
@@ -439,7 +445,7 @@ html {
 .purple {
   color: #8C43FF;
   font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 #purple {
@@ -447,6 +453,23 @@ html {
   text-decoration: none;
 }
 
+.h5-box {
+  /* font-family: 'Noto Sans', sans-serif; */
+}
+
+.ul-box-1 {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 30%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.p-box-1 {
+  font-size: 14px;
+  width: 90%;
+  margin-left: 5%;
+  font-family: 'Noto Sans', sans-serif;
+}
 /* Moving Svg Elements */
 
 .mixy {
@@ -500,11 +523,10 @@ html {
 /* Laptop SVG*/
 
 .container222 {
-  margin-top: 20px;
   margin-left: 43%;
   position: absolute;
   display: block;
-  margin-top: 6%;
+  margin-top: 0%;
   width: 75%;
 }
 
@@ -513,6 +535,85 @@ html {
 }
 
 @keyframes colorChange {
+  50% {
+    fill: #FFFFFF;
+  }
+  100% {
+    fill: #8C43FF;
+  }
+}
+
+.triangle-do {
+  padding: 2px;
+  font-size: 10px;
+}
+
+/*Download CV icon*/
+
+#btn-download {
+  margin-top: 60%;
+  margin-left: 20%;
+  cursor: pointer;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+}
+
+#btn-download svg {
+  margin: 16px 0 0 16px;
+  fill: none;
+  transform: translate3d(0, 0, 0);
+}
+#btn-download svg polyline,
+#btn-download svg path {
+  stroke: white;
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+#btn-download svg path#check {
+  stroke-dasharray: 38;
+  stroke-dashoffset: 114;
+  transition: all 0.4s ease;
+}
+#btn-download.downloaded svg .svg-out {
+  opacity: 0;
+  animation: drop 0.3s linear;
+  transition-delay: 0.4s;
+}
+#btn-download.downloaded svg path#check {
+  stroke: white;
+  stroke-dashoffset: 174;
+  transition-delay: 0.4s;
+}
+
+@keyframes drop {
+  20% {
+    transform: translate(0, -3px);
+  }
+  80% {
+    transform: translate(0, 2px);
+  }
+  95% {
+    transform: translate(0, 0);
+  }
+}
+
+.CVV {
+  margin: -10px;
+  margin-left: 30px;
+  position: absolute;
+}
+
+.CVV22 {
+  animation: colorChangeCV 3s ease infinite;
+}
+
+@keyframes colorChangeCV {
   50% {
     fill: #FFFFFF;
   }

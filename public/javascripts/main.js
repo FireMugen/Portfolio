@@ -86,9 +86,23 @@ $(document).ready(function () {
 	});
 
 	$( "#box-2" ).mouseleave(function() {
-		$('.st1').css('animation-play-state','paused');
+		$( "#st1" ).removeClass( "st1" );
+		$( "#st2" ).removeClass( "st1" );
+		$( "#st3" ).removeClass( "st1" );
+		$( "#st4" ).removeClass( "st1" );
+		$( "#st5" ).removeClass( "st1" );
+		$( "#st6" ).removeClass( "st1" );
 	});
 
+	//Hover Effect on about divs //Download SVG
+	$("#btn-download").click(function() {
+	  $(this).toggleClass("downloaded");
+	});
+
+	$( "#box-3" ).mouseenter(function() {
+		$( "#CVV" ).addClass( "CVV22" );
+	});
+	
 });
 
 
