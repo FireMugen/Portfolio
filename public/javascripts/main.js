@@ -102,7 +102,7 @@ $(document).ready(function () {
 	$( "#box-3" ).mouseenter(function() {
 		$( "#CVV" ).addClass( "CVV22" );
 	});
-	
+
 });
 
 
