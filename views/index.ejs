@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="/stylesheets/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -65,8 +65,8 @@
 					</ul>
 				</p>
 				<br>
-				<div><img id="mixer22" class="mixy" src="images/mixer.svg" alt=""></div>
-				<div><img id="saucepan22" class="saucy" src="images/saucepan.svg" alt=""></div>
+				<div id="mx22"><img id="mixer22" class="mixy" src="images/mixer.svg" alt=""></div>
+				<div id="sauce22"><img id="saucepan22" class="saucy" src="images/saucepan.svg" alt=""></div>
 			</div>
 
 			<div class="col-sm box-2 shadow-22" id="box-2">
@@ -87,7 +87,7 @@
 					<li><span class="triangle-do">▶︎</span> CSS/SASS</li>
 				</ul>
 
-				<% include _laptop %>
+				<div id="laptop22"><% include _laptop %></div>
 			</div>
 			<div id="box-3" class="col-sm box-3 shadow-22">
 				<br/>
@@ -103,12 +103,9 @@
 					<li><span class="triangle-do">▶︎</span> CSS Animation</li>
 					<li><span class="triangle-do">▶︎</span> Snap.svg</li>
 					<li><span class="triangle-do">▶︎</span> Solving Algorithms</li>
-					<div id="btn-download">
-				  	<svg width="70px" height="60px" viewBox="0 0 22 16">
-				    <path d="M2,10 L6,13 L12.8760559,4.5959317 C14.1180021,3.0779974 16.2457925,2.62289624 18,3.5 L18,3.5 C19.8385982,4.4192991 21,6.29848669 21,8.35410197 L21,10 C21,12.7614237 18.7614237,15 16,15 L1,15" id="check"></path>
-				    <polyline points="4.5 8.5 8 11 11.5 8.5" class="svg-out"></polyline>
-				    <path d="M8,1 L8,11" class="svg-out"></path>
-						</svg>
+				</ul>
+				<div>
+					<img src="/images/cv.svg" alt="Resume Download" class="CVV" id="btn-download"/>
 				</div>
 			</div>
 		</div>
@@ -117,7 +114,6 @@
 
 	<div class="container project-div">
 		<a id="projects">
-
 		<div class="row">
 			<div class="projects">
 				<h1 class="purple things-ive">Things I've Made...</h1>
@@ -219,7 +215,7 @@
 	          </a>
 	        </div>
 	      </div>
-	 			<div class="footer-copyright text-center py-5 footer22">© 2019 Copyright
+	 			<div class="footer-copyright text-center py-5 footer22"><span id="copyright">© 2019 Copyright</span>
 	 				<a href="#top" id="purple">Max Reeves</a>
 				</ul>
 				<a href="https://drive.google.com/file/d/1nAu-dp8B43q2Ji5YZpe7wj3xno40YEnz/view?usp=sharing" id="download-link">CV Download</a>

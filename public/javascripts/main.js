@@ -95,12 +95,9 @@ $(document).ready(function () {
 	});
 
 	//Hover Effect on about divs //Download SVG
-	$("#btn-download").click(function() {
-	  $(this).toggleClass("downloaded");
-	});
 
 	$( "#box-3" ).mouseenter(function() {
-		$( "#CVV" ).addClass( "CVV22" );
+		$( "#btn-download" ).addClass( "hvr-buzz" );
 	});
 
 });
