@@ -642,9 +642,10 @@ html {
   }
 
   .text-22 {
+    text-align: center;
     background-color: #8C43FF;
     color: white;
-    font-size: 30%;
+    font-size: 20%;
     padding: 25px 40px;
   	border-radius: 1%;
     margin-top: 40%;
@@ -662,6 +663,10 @@ html {
   .image-small {
   	width: 20px;
   	height: 20px;
+  }
+
+  .image-222 {
+
   }
 
 
