@@ -706,17 +706,17 @@ html {
 
   #box-1-points {
     padding: 40px;
-    margin-left: 35%;
+    margin-left: 33%;
   }
 
   #box-2-points {
     padding: 40px;
-    margin-left: 35%;
+    margin-left: 33%;
   }
 
   #box-3-points {
     padding: 40px;
-    margin-left: 35%;
+    margin-left: 33%;
   }
 
   #box-1 {
@@ -743,6 +743,10 @@ html {
     text-align: center;
   }
 
+  #svg-down1 {
+    display: none !important;
+  }
+
   .white-h2 {
     font-family: 'Rubik Mono One', sans-serif;
     letter-spacing: 2px;
@@ -759,12 +763,11 @@ html {
   }
 
   .project-div {
-    height: 1750px;
+    height: 1800px;
   }
 
   .contact-div {
     height: 800px;
-
   }
 
   body {
@@ -809,6 +812,7 @@ html {
     width: 100%;
     transition: .5s ease;
     backface-visibility: hidden;
+    padding: 20px;
   }
 
   .middle-22 {
@@ -832,9 +836,9 @@ html {
     font-size: 90%;
     padding: 50px 80px;
   	border-radius: 1%;
-    margin-left: 1.5%;
+    margin-left: 0;
     margin-top: 30%;
-  	width: 700px;
+  	width: 600px;
     font-family: 'Noto Sans', sans-serif;
   }
 
