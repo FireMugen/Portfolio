@@ -644,11 +644,11 @@ html {
     text-align: center;
   }
 
-  .container-22:hover .image-22 {
+  .container-22:before .image-22 {
     display: none !important;
   }
 
-  .container-22:hover .middle-22 {
+  .container-22:before .middle-22 {
     display: none !important;
   }
 
@@ -656,7 +656,7 @@ html {
     text-align: center;
     background-color: #8C43FF;
     color: white;
-    font-size: 50%;
+    font-size: 45%;
     padding: 25px 40px;
   	border-radius: 1%;
     margin-top: 40%;

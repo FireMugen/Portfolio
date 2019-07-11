@@ -37,7 +37,7 @@ $(document).ready(function () {
 		$hamburger.toggleClass("is-active");
 		$hamburger.toggleClass("hamburger--collapse");
 		$margin.toggleClass("down22");
-	})
+	});
 
 	//No novacancy
   $('.no').novacancy({
@@ -59,8 +59,8 @@ $(document).ready(function () {
   	'blinkMax': 0.5,
   	'loopMin': 0.5,
   	'loopMax': 2,
-  	'color': 'PURPLE',
-  	'glow': ['0 0 80px Orange', '0 0 30px Red', '0 0 6px Yellow'],
+  	'color': 'WHITE',
+  	'glow': ['0 0 80px White', '0 0 30px White', '0 0 6px White'],
   	'off': 0, // amount of off chars
   	'blink': 0, // amount of blink chars
   	'classOn': 'on',
