@@ -681,3 +681,164 @@ html {
     text-decoration: none !important;
   }
 }
+
+@media only screen and (max-width: 1030px) and (orientation: landscape) {
+
+  #mx22 {
+    display: none !important;
+  }
+
+  #sauce22 {
+      display: none !important;
+  }
+
+  #laptop22 {
+    display: none !important;
+  }
+
+  #btn-download {
+    display: none !important;
+  }
+
+  /* #copyright {
+    display: none !important;
+  } */
+
+  #box-1 {
+    flex-basis: 1 !important;
+    height: 450px;
+    width: 1000px !important;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
+  }
+
+  #box-2 {
+    height: 450px;
+    width: 310px;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
+  }
+
+  #box-3 {
+    height: 450px;
+    width: 310px;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
+  }
+
+  .white-h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+
+  .index-div {
+    height: 400px;
+  }
+
+  .about-div {
+    height: 600px;
+    font-size: 15px;
+  }
+
+  .project-div {
+    height: 1700px;
+  }
+
+  .contact-div {
+    height: 800px;
+
+  }
+
+  body {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(100, 0, 255, 0.75) 10%, rgba(255, 255, 255, 1) 14%, rgba(255,255, 255, 1), rgba(255, 255, 255, 1)),
+                      url("/images/marble2.jpg");
+  }
+
+  .purple {
+    color: #8C43FF;
+    font-weight: bold;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+
+  .purple2 {
+    color: #8C43FF;
+    font-weight: bold;
+    font-family: 'Rubik Mono One', sans-serif;
+  }
+
+  #svg-down1 {
+    margin: 0 auto;
+    margin-left: 40%;
+    margin-top: 70%;
+    width: 8%;
+  }
+
+  .thumbzz {
+    width: 90vw;
+    padding-bottom: 50px;
+  }
+
+  .things-ive {
+    margin-top: 10%;
+    color: #8C43FF;
+  }
+
+  .image-22 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle-22 {
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+  }
+
+  .container-22:before .image-22 {
+    display: none !important;
+  }
+
+  .container-22:before .middle-22 {
+    display: none !important;
+  }
+
+  .text-22 {
+    text-align: center;
+    background-color: #8C43FF;
+    color: white;
+    font-size: 90%;
+    padding: 50px 80px;
+  	border-radius: 1%;
+    margin-left: 1.5%;
+    margin-top: 30%;
+  	width: 700px;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .container-22 {
+  	position: relative;
+  	width: 95%;
+  	margin: 0 auto;
+  }
+
+
+  .image-small {
+  	width: 60px;
+  	height: 60px;
+  }
+
+  #hamburger-items > li > a:hover {
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+}
