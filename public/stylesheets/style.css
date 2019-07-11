@@ -544,16 +544,29 @@ html {
   }
 
 
-  .box-1 {
+  #box-1 {
     height: 450px;
+    width: 310px;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
   }
 
-  .box-2 {
+  #box-2 {
     height: 450px;
+    width: 310px;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
   }
 
-  .box-3 {
+  #box-3 {
     height: 450px;
+    width: 310px;
+    margin-bottom: 10px auto;
+    margin-left: 9%;
+    text-align: center;
+
   }
 
   .white-h2 {
@@ -563,18 +576,17 @@ html {
   }
 
   .index-div {
-    height: 650px;
+    height: 700px;
 
   }
 
   .about-div {
-    height: 1500px;
-
+    height: 1550px;
+    font-size: 15px;
   }
 
   .project-div {
-    height: 1050px;
-
+    height: 1100px;
   }
 
   .contact-div {
@@ -585,12 +597,12 @@ html {
   body {
     background-size: auto;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(100, 0, 255, 0.75) 15%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
+    background-image: linear-gradient(rgba(100, 0, 255, 0.75) 15%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)),
                       url("/images/marble2.jpg");
   }
 
   .purple {
-    color: white;
+    color: #8C43FF;
     font-weight: bold;
     font-family: 'Rubik Mono One', sans-serif;
   }
@@ -644,7 +656,7 @@ html {
     text-align: center;
     background-color: #8C43FF;
     color: white;
-    font-size: 45%;
+    font-size: 50%;
     padding: 25px 40px;
   	border-radius: 1%;
     margin-top: 40%;
@@ -664,9 +676,8 @@ html {
   	height: 20px;
   }
 
-  .image-222 {
-
+  #hamburger-items > li > a:hover {
+    color: #fff;
+    text-decoration: none !important;
   }
-
-
 }

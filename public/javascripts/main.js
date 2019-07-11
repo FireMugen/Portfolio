@@ -31,6 +31,14 @@ $(document).ready(function () {
 		$margin.toggleClass("down22");
 	});
 
+	$('#hamburger-items').on('click', function(e) {
+		$items.toggleClass("hidden-menu-items");
+		$items.toggleClass("fade2");
+		$hamburger.toggleClass("is-active");
+		$hamburger.toggleClass("hamburger--collapse");
+		$margin.toggleClass("down22");
+	})
+
 	//No novacancy
   $('.no').novacancy({
     'reblinkProbability': 0.1,
@@ -99,6 +107,8 @@ $(document).ready(function () {
 	$( "#box-3" ).mouseenter(function() {
 		$( "#btn-download" ).addClass( "hvr-buzz" );
 	});
+
+	//window size antics
 
 });
 
