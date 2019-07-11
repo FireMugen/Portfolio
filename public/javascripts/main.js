@@ -109,7 +109,11 @@ $(document).ready(function () {
 	});
 
 	//window size antics
-
+	if($(window).width() <= 812) {
+		 $("#box-1").removeClass("col-sm");
+		 $("#box-2").removeClass("col-sm");
+		 $("#box-3").removeClass("col-sm");
+	}
 });
 
 

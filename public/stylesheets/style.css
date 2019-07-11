@@ -704,10 +704,24 @@ html {
     display: none !important;
   } */
 
+  #box-1-points {
+    padding: 40px;
+    margin-left: 35%;
+  }
+
+  #box-2-points {
+    padding: 40px;
+    margin-left: 35%;
+  }
+
+  #box-3-points {
+    padding: 40px;
+    margin-left: 35%;
+  }
+
   #box-1 {
-    flex-basis: 1 !important;
     height: 450px;
-    width: 1000px !important;
+    width: 600px;
     margin-bottom: 10px auto;
     margin-left: 9%;
     text-align: center;
@@ -715,7 +729,7 @@ html {
 
   #box-2 {
     height: 450px;
-    width: 310px;
+    width: 600px;
     margin-bottom: 10px auto;
     margin-left: 9%;
     text-align: center;
@@ -723,7 +737,7 @@ html {
 
   #box-3 {
     height: 450px;
-    width: 310px;
+    width: 600px;
     margin-bottom: 10px auto;
     margin-left: 9%;
     text-align: center;
@@ -736,16 +750,16 @@ html {
   }
 
   .index-div {
-    height: 400px;
+    height: 500px;
   }
 
   .about-div {
-    height: 600px;
+    height: 1500px;
     font-size: 15px;
   }
 
   .project-div {
-    height: 1700px;
+    height: 1750px;
   }
 
   .contact-div {
