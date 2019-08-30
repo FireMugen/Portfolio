@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var app = express();
 const ejs = require('ejs');
+const serverless = require('serverless-http');
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
@@ -42,7 +43,10 @@ router.get('/sent', (req, res, next) => {
       const {headers, body} = response;
     });
 
+    app.use('/.netlify/functions/app', router);  // path must route to lambda
+
 });
 
 
 module.exports = router;
+module.exports.handler = serverless(router);

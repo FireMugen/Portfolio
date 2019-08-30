@@ -114,6 +114,7 @@ $(document).ready(function () {
 		 $("#box-2").removeClass("col-sm");
 		 $("#box-3").removeClass("col-sm");
 	}
+
 });
 
 
